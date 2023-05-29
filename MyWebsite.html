@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laina Joan</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.header {
+  background-color: #F0B27A;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.nav {
+  background-color: #AAB7B8;
+  float: left;
+  width: 30%;
+  height: 60%;
+  padding: 20px;
+  list-style-type: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+nav ul {
+  padding: 0;
+  color: black;
+  display: inline-block;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li button {
+  background-color: #5f4b32;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+  background-color: #6f5e47;
+}
+
+.article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 60%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #F0B27A;
+  padding: 10px;
+  text-align: left;
+  color: blue;
+  margin-top: 20px;
+}
+
+p {
+  color: black;
+  padding: 5px;
+}
+
+.home {
+  display: block;
+}
+
+.about {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header class="header"><b>BARINGO.</b></header>
+<section>
+  <nav class="nav">
+    <ul>
+      <li><button onclick="display('home')">HOME</button></li>
+      <li><button onclick="display('about')">ABOUT</button></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2><b>A COMPREHENSIVE ANALYSIS OF LAND DEGRADATION IN BARINGO COUNTY.</b></h2>
+    <p class="home">This project aims to conduct an in-depth examination and develop a comprehensive understanding of the various aspects of land degradation within Baringo County. This project will employ a multidisciplinary approach that combines extensive data collection, analysis, and modeling techniques to investigate the causes, patterns, and impacts of land degradation in Baringo County. <br>
+    Soil erosion, deforestation, overgrazing, and unsustainable land management practices will be investigated with the goal of identifying key drivers and the extent of land degradation, which will provide valuable insights for developing effective mitigation and reversal strategies and policies.</p>
+    <p class="about">Name: Laina Joan.<br>
+    Reg no: ENC221-0086/2018.<br>
+    Year: Fifth.<br>
+    Course: GEGIS.</p>
+  </article>
+</section>
+<footer class="footer">
+  <address>joanlaina04@gmail.com</address>
+</footer>
+<script>
+  function display(section) {
+    const home = document.querySelector('.home');
+    const about = document.querySelector('.about');
+    
+    if (section === 'home') {
+      home.style.display = 'block';
+      about.style.display = 'none';
+    } else if (section === 'about') {
+      home.style.display = 'none';
+      about.style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>
+
+ 
